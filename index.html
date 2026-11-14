@@ -188,6 +188,7 @@ section{padding:104px 0;position:relative}
 .cbox h2{font-size:clamp(30px,4.2vw,50px);margin:14px auto 16px;max-width:18ch}
 .cbox p{color:var(--muted);max-width:56ch;margin:0 auto;font-size:17.5px}
 .cbox .cta{justify-content:center}
+.cbox p.cline{margin-top:22px;font-size:14.5px;color:var(--dim)}
 footer{border-top:1px solid var(--line);padding:28px 0;color:var(--dim);font-size:13.5px}
 footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
@@ -367,10 +368,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
       <article class="card proj rv">
         <div class="tagrow"><span class="tag">Security</span><span class="tag">Compliance</span><span class="tag">APIs</span></div>
-        <h3>Payment portal API security remediation</h3>
-        <div class="row"><b>Challenge</b><p>A broken-object-level-authorization (BOLA) class vulnerability surfaced in a payment portal integration.</p></div>
-        <div class="row"><b>What I did</b><p>Identified the issue, led remediation, coordinated responsible disclosure and wrote the compliance remediation playbook the team now follows.</p></div>
-        <div class="result"><div><b class="grad">2</b><span>API endpoints secured</span></div><div><b class="grad">1</b><span>reusable compliance playbook</span></div></div>
+        <h3>Payment portal API security hardening</h3>
+        <div class="row"><b>Challenge</b><p>Payment portals expose sensitive customer and transaction data through APIs, so authorization has to hold for every individual record.</p></div>
+        <div class="row"><b>What I did</b><p>Led a review and hardening of API authorization on a payment portal integration, and wrote the compliance playbook the team now follows.</p></div>
+        <div class="result"><div><b class="grad">2</b><span>API endpoints hardened</span></div><div><b class="grad">1</b><span>reusable compliance playbook</span></div></div>
       </article>
 
       <article class="card proj rv">
@@ -382,10 +383,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       </article>
 
       <article class="card proj rv">
-        <div class="tagrow"><span class="tag">NetSuite</span><span class="tag">Billing</span><span class="tag">Revenue Recognition</span></div>
+        <div class="tagrow"><span class="tag hot">At Qlik</span><span class="tag">NetSuite</span><span class="tag">Billing</span><span class="tag">Revenue Recognition</span></div>
         <h3>Billing automation &amp; revenue recognition</h3>
         <div class="row"><b>Challenge</b><p>Finance teams were running subscription billing and revenue recognition with heavy manual effort.</p></div>
-        <div class="row"><b>What I did</b><p>Built solutions on SuiteBilling, Advanced Revenue Management and E-Invoicing across three mid-market finance workflows, and led a major system integration with zero critical defects after go-live.</p></div>
+        <div class="row"><b>What I did</b><p>As a NetSuite Developer at Qlik, built solutions on SuiteBilling, Advanced Revenue Management and E-Invoicing across three finance workflows, and led a major system integration with zero critical defects after go-live.</p></div>
         <div class="result"><div><b class="grad">~30%</b><span>less manual finance effort</span></div><div><b class="grad">3</b><span>workflows automated</span></div></div>
       </article>
 
@@ -453,8 +454,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <aside class="side">
         <div class="card rv">
           <h3>Education</h3>
-          <div class="edu">M.Eng., Electrical &amp; Computer Engineering<span>University of Waterloo · 2020 · GPA 3.95</span></div>
-          <div class="edu">B.Eng., Electrical Engineering<span>M.S. University of Baroda · 2017 · GPA 3.93</span></div>
+          <div class="edu">M.Eng., Electrical &amp; Computer Engineering<span>University of Waterloo · 2020</span></div>
+          <div class="edu">B.Eng., Electrical Engineering<span>M.S. University of Baroda · 2017</span></div>
         </div>
         <div class="card rv">
           <h3>Certifications</h3>
@@ -478,7 +479,11 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <span class="kicker">Let's talk</span>
       <h2>Have a payments or NetSuite product to build?</h2>
       <p>I'm open to product leadership roles and select advisory work in embedded fintech, payments and NetSuite. Tell me what you're building.</p>
-      <div class="cta" id="contact-links"></div>
+      <div class="cta">
+        <a class="btn primary" href="mailto:rrs8929@gmail.com">Email me</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/rr8shah/" target="_blank" rel="noopener me">LinkedIn</a>
+      </div>
+      <p class="cline">rrs8929@gmail.com · linkedin.com/in/rr8shah</p>
     </div>
   </div>
 </section>
@@ -489,31 +494,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 </footer>
 
 <script>
-/* ---- Contact details: edit here. Empty values hide the button. ---- */
-const CONTACT = {
-  email: "rrs8929@gmail.com",
-  linkedin: "https://www.linkedin.com/in/rr8shah/",
-  github: ""
-};
-
 document.documentElement.classList.add('js');
 document.getElementById('yr').textContent = new Date().getFullYear();
-
-// contact buttons
-(function(){
-  const box = document.getElementById('contact-links');
-  const items = [
-    CONTACT.email && ['Email me', 'mailto:' + CONTACT.email, 'primary'],
-    CONTACT.linkedin && ['LinkedIn', CONTACT.linkedin, CONTACT.email ? 'ghost' : 'primary'],
-    CONTACT.github && ['GitHub', CONTACT.github, 'ghost']
-  ].filter(Boolean);
-  for (const [label, href, kind] of items) {
-    const a = document.createElement('a');
-    a.className = 'btn ' + kind; a.textContent = label; a.href = href;
-    if (!href.startsWith('mailto:')) { a.target = '_blank'; a.rel = 'noopener'; }
-    box.appendChild(a);
-  }
-})();
 
 // nav
 const header = document.getElementById('top');
