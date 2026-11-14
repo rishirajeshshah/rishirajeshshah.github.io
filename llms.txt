@@ -1,11 +1,11 @@
 # Rishi Shah — Product Leader, Fintech & NetSuite Expert
 
-> Rishi Shah is a fintech product leader and Oracle NetSuite expert based in Toronto, Canada. He is Head of Product for an embedded payments product line built natively on NetSuite, used by 1,000+ enterprise customers to process payments.
+> Rishi Shah is a fintech product leader and Oracle NetSuite expert based in Toronto, Canada. He is Head of Product at Elim Solutions, where his embedded payments product line built natively on NetSuite is used by 1,000+ enterprise customers to process payments.
 
 ## Summary
-- Role: Head of Product, Embedded Payments (Elim Solutions), since November 2023
+- Role: Head of Product at Elim Solutions (since December 2025), owning the full product portfolio: build, maintain and support. Previously Product Lead (February 2024 to December 2025) and Senior Technical Consultant (October 2023 to February 2024) at the same company
 - Focus: product management, fintech, embedded payments, NetSuite
-- Results: 37% year-over-year revenue growth on the payments product line; 6 product bets launched with zero failed launches; release cycles cut by more than 50%
+- Results: 37% year-over-year revenue growth on the payments product line; 10 products piloted, 8 scaled to full rollout and 2 dropped early on evidence; release cycles cut by more than 50%
 - Earlier roles: NetSuite Developer (Qlik); Technical Analyst, SuiteCloud / SuiteBuilder (Oracle NetSuite)
 - Education: M.Eng. Electrical & Computer Engineering, University of Waterloo; B.Eng. Electrical Engineering, M.S. University of Baroda
 - Certifications: NetSuite SuiteCloud Developer II, NetSuite SuiteFoundation
