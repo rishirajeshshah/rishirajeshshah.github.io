@@ -74,7 +74,7 @@ header.scrolled{background:rgba(7,11,20,.78);backdrop-filter:blur(14px);-webkit-
 .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
 .brand{display:flex;align-items:center;gap:12px;font-family:Sora;font-weight:600}
 .mono{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;font-size:13px;font-weight:700;color:#06121a;background:var(--grad)}
-.links{display:flex;align-items:center;gap:24px;font-size:14.5px;color:var(--muted)}
+.links{display:flex;align-items:center;gap:20px;font-size:14px;color:var(--muted)}
 .links a:hover{color:var(--text)}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:999px;font-weight:600;font-size:15px;transition:transform .2s,box-shadow .2s,background .2s,border-color .2s;cursor:pointer;border:1px solid transparent}
 .btn.primary{background:var(--grad);color:#06121a;box-shadow:0 8px 30px -10px rgba(94,234,212,.55)}
@@ -195,6 +195,17 @@ section{padding:104px 0;position:relative}
 .edu span{display:block;color:var(--muted);font-size:13.5px}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
 
+/* RESOURCES */
+.resgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.res{display:flex;flex-direction:column;align-items:flex-start;gap:12px;min-height:190px}
+.res h3{margin:6px 0 0}
+.res .get{margin-top:auto;color:var(--a1);font-weight:600;font-size:14.5px}
+.res.soon{border-style:dashed;background:transparent}
+.res.soon h3{color:var(--muted)}
+.res.soon:hover{transform:none;box-shadow:none;border-color:var(--line2)}
+#resources+.contact{padding-top:104px}
+@media (max-width:760px){.resgrid{grid-template-columns:1fr}#resources+.contact{padding-top:76px}}
+
 /* CONTACT */
 .contact{padding:0 0 110px}
 .cbox{position:relative;border-radius:26px;padding:72px 40px;text-align:center;border:1px solid var(--line2);overflow:hidden;background:var(--card)}
@@ -249,8 +260,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <a href="#netsuite">NetSuite</a>
       <a href="#ai">AI</a>
       <a href="#projects">Projects</a>
-      <a href="#approach">Approach</a>
       <a href="#experience">Experience</a>
+      <a href="#resources">Resources</a>
       <a href="#contact" class="btn primary sm">Get in touch</a>
     </nav>
   </div>
@@ -539,8 +550,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <aside class="side">
         <div class="card rv">
           <h3>Education</h3>
-          <div class="edu">M.Eng., Electrical &amp; Computer Engineering<span>University of Waterloo · 2020</span></div>
-          <div class="edu">B.Eng., Electrical Engineering<span>M.S. University of Baroda · 2017</span></div>
+          <div class="edu">M.Eng., Electrical &amp; Computer Engineering<span>University of Waterloo</span></div>
+          <div class="edu">B.Eng., Electrical Engineering<span>M.S. University of Baroda</span></div>
         </div>
         <div class="card rv">
           <h3>Certifications</h3>
@@ -553,6 +564,24 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
           </div>
         </div>
       </aside>
+    </div>
+  </div>
+</section>
+
+<!-- RESOURCES -->
+<section id="resources" class="alt">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="kicker">Free resources</span>
+      <h2>Take something useful with you.</h2>
+      <p>Free material from my work in product, payments and NetSuite. The first pieces are on the way.</p>
+    </div>
+    <div class="resgrid">
+      <!-- To publish a resource: replace a "soon" card with
+           <a class="card res rv" href="FILE-OR-LINK"><span class="tag hot">Free</span><h3>Title</h3><p>One-line description.</p><span class="get">Get it →</span></a> -->
+      <div class="card res soon rv"><span class="tag">Coming soon</span><h3>Resource 1</h3><p>Details to follow.</p></div>
+      <div class="card res soon rv"><span class="tag">Coming soon</span><h3>Resource 2</h3><p>Details to follow.</p></div>
+      <div class="card res soon rv"><span class="tag">Coming soon</span><h3>Resource 3</h3><p>Details to follow.</p></div>
     </div>
   </div>
 </section>
