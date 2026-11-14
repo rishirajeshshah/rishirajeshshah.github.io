@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Rishi Shah — Product Leader | Fintech &amp; Embedded Payments | NetSuite Expert</title>
-<meta name="description" content="Rishi Shah is a fintech product leader and NetSuite expert in Toronto. Head of Product for embedded payments used by 1,000+ enterprise customers — SuitePayments, SuiteBilling, revenue recognition, SuiteScript and AI.">
+<meta name="description" content="Rishi Shah is a fintech product leader and NetSuite expert in Toronto. Head of Product for embedded payments used by 1,000+ enterprise customers — SuitePayments, SuiteBilling, SuiteScript and AI SuiteApps with Oracle NetSuite's AI Application Badge.">
 <meta name="author" content="Rishi Shah">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
 <link rel="canonical" href="https://rishirajeshshah.github.io/">
@@ -40,7 +40,7 @@
       {"@type": "EducationalOccupationalCredential", "name": "NetSuite SuiteCloud Developer II"},
       {"@type": "EducationalOccupationalCredential", "name": "NetSuite SuiteFoundation"}
     ],
-    "knowsAbout": ["Product management", "Product leadership", "Fintech", "Embedded payments", "Payment gateway integration", "Oracle NetSuite", "NetSuite SuitePayments", "NetSuite SuiteBilling", "NetSuite Advanced Revenue Management", "NetSuite Electronic Invoicing", "SuiteScript 2.x", "SuiteQL", "SuiteCloud Development Framework", "SuiteApp development", "AI agents for finance", "API security"]
+    "knowsAbout": ["Product management", "Product leadership", "Fintech", "Embedded payments", "Payment gateway integration", "Oracle NetSuite", "NetSuite SuitePayments", "NetSuite SuiteBilling", "NetSuite Advanced Revenue Management", "NetSuite Electronic Invoicing", "SuiteScript 2.x", "SuiteQL", "SuiteCloud Development Framework", "SuiteApp development", "AI agents for finance", "NetSuite N/llm", "Model Context Protocol (MCP)", "AI SuiteApps", "API security"]
   }
 }
 </script>
@@ -74,7 +74,7 @@ header.scrolled{background:rgba(7,11,20,.78);backdrop-filter:blur(14px);-webkit-
 .nav{display:flex;align-items:center;justify-content:space-between;height:68px}
 .brand{display:flex;align-items:center;gap:12px;font-family:Sora;font-weight:600}
 .mono{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;font-size:13px;font-weight:700;color:#06121a;background:var(--grad)}
-.links{display:flex;align-items:center;gap:30px;font-size:14.5px;color:var(--muted)}
+.links{display:flex;align-items:center;gap:24px;font-size:14.5px;color:var(--muted)}
 .links a:hover{color:var(--text)}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:999px;font-weight:600;font-size:15px;transition:transform .2s,box-shadow .2s,background .2s,border-color .2s;cursor:pointer;border:1px solid transparent}
 .btn.primary{background:var(--grad);color:#06121a;box-shadow:0 8px 30px -10px rgba(94,234,212,.55)}
@@ -134,6 +134,21 @@ section{padding:104px 0;position:relative}
 .mod p{font-size:14.5px}
 @media (max-width:1000px){.mods{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:760px){.mods,.nsband{grid-template-columns:1fr}}
+
+/* AI */
+.aigrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:20px}
+.aigrid .card{display:flex;flex-direction:column}
+.aigrid .card h3{font-size:18px}
+.aigrid .card p{font-size:14.5px}
+.card p.out{margin-top:auto;padding-top:16px;color:var(--text);font-size:14px}
+.card p.out b{display:block;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--a1);font-weight:600;margin-bottom:2px}
+.aigrid .card p:not(.out){margin-bottom:16px}
+.card ul.ticks{margin-top:18px;gap:10px}
+.card ul.ticks li{font-size:14.5px}
+.proj.wide>div>p{color:var(--muted);font-size:15.5px}
+.projects .proj:last-child:nth-child(even){grid-column:1/-1}
+@media (max-width:1000px){.aigrid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:760px){.aigrid{grid-template-columns:1fr}}
 
 /* PROJECTS */
 .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
@@ -232,6 +247,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <nav class="links" aria-label="Primary">
       <a href="#expertise">Expertise</a>
       <a href="#netsuite">NetSuite</a>
+      <a href="#ai">AI</a>
       <a href="#projects">Projects</a>
       <a href="#approach">Approach</a>
       <a href="#experience">Experience</a>
@@ -293,7 +309,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M13.5 5l-3 14"/></svg></div>
         <h3>Engineering &amp; AI</h3>
         <p>Hands-on enough to architect it, not just specify it.</p>
-        <ul><li>REST payment APIs</li><li>Multi-agent LLM pipelines</li><li>Python &amp; SQL</li><li>API security review</li></ul>
+        <ul><li>AI SuiteApps on N/llm &amp; MCP</li><li>Multi-agent LLM pipelines</li><li>REST payment APIs</li><li>Python &amp; SQL</li><li>API security review</li></ul>
       </article>
     </div>
   </div>
@@ -320,18 +336,88 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <article class="card mod rv"><h3>SuiteScript 2.x &amp; SuiteQL</h3><p>Hands-on development: server and client scripts, scheduled and map/reduce processing, and SuiteQL queries that power reporting and AI agents.</p></article>
       <article class="card mod rv"><h3>SuiteCloud platform &amp; SuiteApps</h3><p>SuiteBuilder customization, SuiteCloud Development Framework (SDF) deployments, and packaging features as SuiteApps for many accounts.</p></article>
       <article class="card mod rv"><h3>Integrations</h3><p>REST-based integrations between NetSuite and payment processors, CRM and pricing systems — delivered with zero critical defects after go-live.</p></article>
-      <article class="card mod rv"><h3>AI on NetSuite data</h3><p>A CFO AI agent that answers finance questions from live ERP data, and a multi-agent pipeline that generates NetSuite configuration.</p></article>
+      <article class="card mod rv"><h3>AI on NetSuite data</h3><p>Native AI SuiteApps on N/llm and MCP Custom Tools — two with Oracle NetSuite's AI Application Badge — plus a CFO agent over SuiteQL.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- AI -->
+<section id="ai" class="alt">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="kicker">AI product work</span>
+      <h2>Shipping AI inside the ERP, not beside it.</h2>
+      <p>I build AI that runs natively in NetSuite, on the customer's own data, permissions and audit trail. These are production SuiteApps that passed Oracle's review, not demos.</p>
+    </div>
+
+    <article class="card proj wide rv">
+      <div>
+        <div class="tagrow"><span class="tag hot">Oracle NetSuite AI Application Badge ×2</span><span class="tag">MCP</span><span class="tag">SuiteApps</span></div>
+        <h3>PIMS AI Tools and AROne AI Tools</h3>
+        <p>AI built into two Elim products: physical inventory counting and accounts receivable collections.</p>
+        <ul class="ticks">
+          <li>11 read-only MCP Custom Tools let AI assistants query count status, variances, overdue invoices, credits and follow-up queues.</li>
+          <li>AI Count Brief and AI Collections Brief summarize what's going on and recommend the next best action.</li>
+          <li>AI Email Draft writes collection emails in the tone the user picks: friendly, firm or final.</li>
+          <li>The AI reads the same saved searches as the product dashboards, so the AI and the user always see the same numbers.</li>
+          <li>Built-in safeguards: input validation, output redaction, usage metering, audit logging and HTML sanitization, backed by a privacy and compliance evidence pack for Oracle's AI review.</li>
+        </ul>
+      </div>
+      <div class="result">
+        <div><b class="grad">2</b><span>Oracle NetSuite AI Application Badges earned (Nov 2026)</span></div>
+        <div><b class="grad">11</b><span>MCP Custom Tools in production</span></div>
+        <div><b class="grad">5</b><span>built-in AI safeguards</span></div>
+      </div>
+    </article>
+
+    <div class="aigrid">
+      <article class="card rv">
+        <div class="tagrow"><span class="tag">Delivery under pressure</span></div>
+        <h3>Kept a launch on track when the platform broke</h3>
+        <p>Native AI tool-calling failed in production. I tested and ruled out five hypotheses, then built a minimal diagnostic that proved the fault was in the platform, not our code. We shipped a single-call fallback on schedule and kept the full agent loop ready to switch back on.</p>
+        <p class="out"><b>Result</b> No delay to launch, and a clean reproduction for the vendor.</p>
+      </article>
+      <article class="card rv">
+        <div class="tagrow"><span class="tag">Payments</span><span class="tag">N/llm</span></div>
+        <h3>SuitePaymentAI: conversational payment operations</h3>
+        <p>An AI layer for a SuitePayment SuiteApp with nine tools: dashboards for expiring authorizations, re-authorization with preview before execute, and merchant configuration. Includes an assistant that answers from the Admin Guide (298 indexed chunks), running inside NetSuite on N/llm.</p>
+        <p class="out"><b>Scope</b> 9 tools, running natively in NetSuite.</p>
+      </article>
+      <article class="card rv">
+        <div class="tagrow"><span class="tag">Multi-agent</span><span class="tag">Delivery</span></div>
+        <h3>Multi-agent delivery pipeline</h3>
+        <p>A five-stage pipeline: business requirements (BCRD) → solution analysis → functional spec (FRD) → technical spec (TRD) → SDF build. It routes each stage to the right model — open models for documents, Claude for technical stages — and runs as a React + Express app.</p>
+        <p class="out"><b>Result</b> Client requirements become build-ready specs, faster and more consistently.</p>
+      </article>
+      <article class="card rv">
+        <div class="tagrow"><span class="tag">Finance</span><span class="tag">SuiteQL</span></div>
+        <h3>CFO AI agent</h3>
+        <p>A finance agent that answers questions over live ERP data through a 12-tool SuiteQL API secured with token-based OAuth.</p>
+        <p class="out"><b>Result</b> Financial analysis turnaround cut from hours to minutes.</p>
+      </article>
+      <article class="card rv">
+        <div class="tagrow"><span class="tag">New service line</span><span class="tag">MCP</span></div>
+        <h3>AI-assisted SuiteScript migration, productized</h3>
+        <p>Built with Sales as a new service line. An AI audit connects to a client's NetSuite account (AI Connector/MCP + SuiteQL), inventories every script, flags which need upgrading to SuiteScript 2.1, and produces scoping and SOW documents before the engagement starts. It builds on Oracle's official upgrade skill rather than rebuilding it.</p>
+        <p class="out"><b>Result</b> Scoping done before the engagement begins.</p>
+      </article>
+      <article class="card rv">
+        <div class="tagrow"><span class="tag hot">Leadership</span></div>
+        <h3>Leading AI adoption</h3>
+        <p>I presented Elim's AI strategy to the CEO and COO, which led to a company AI Committee that I lead. AI now runs through our product development lifecycle, support automation and services delivery.</p>
+        <p class="out"><b>Result</b> A standing AI Committee, chaired by me.</p>
+      </article>
     </div>
   </div>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" class="alt">
+<section id="projects">
   <div class="wrap">
     <div class="head rv">
       <span class="kicker">Selected projects</span>
       <h2>Work that moved a number.</h2>
-      <p>Six projects across product, payments, AI and NetSuite. Client and partner names are withheld; the outcomes are real.</p>
+      <p>Product, payments and NetSuite work beyond AI. Client and partner names are withheld; the outcomes are real.</p>
     </div>
     <div class="projects">
 
@@ -348,22 +434,6 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
           <div><b class="grad">4</b><span>Global payment gateways integrated</span></div>
           <div><b class="grad">10+</b><span>Accounts on the new feature within 2 release cycles</span></div>
         </div>
-      </article>
-
-      <article class="card proj rv">
-        <div class="tagrow"><span class="tag">Product Operations</span><span class="tag">Lean Validation</span></div>
-        <h3>Pilot-then-scale delivery model</h3>
-        <div class="row"><b>Challenge</b><p>Financial product bets are expensive to get wrong, and early signals are thin.</p></div>
-        <div class="row"><b>What I did</b><p>Designed a delivery model: tightly scoped MVPs, limited pilots with 3–5 accounts, adoption and payment-success-rate signals, then an evidence-based go/no-go on full rollout.</p></div>
-        <div class="result"><div><b class="grad">10</b><span>products piloted</span></div><div><b class="grad">8</b><span>scaled</span></div><div><b class="grad">2</b><span>dropped on evidence</span></div></div>
-      </article>
-
-      <article class="card proj rv">
-        <div class="tagrow"><span class="tag">AI</span><span class="tag">Finance</span><span class="tag">NetSuite</span></div>
-        <h3>CFO AI agent &amp; multi-agent configuration pipeline</h3>
-        <div class="row"><b>Challenge</b><p>Financial analysis and NetSuite configuration work consumed hours of specialist time per request.</p></div>
-        <div class="row"><b>What I did</b><p>Architected a CFO AI agent that queries live ERP data through SuiteQL tool handlers, plus a multi-agent pipeline that generates NetSuite configuration automatically.</p></div>
-        <div class="result"><div><b class="grad">Hours → minutes</b><span>financial analysis turnaround</span></div></div>
       </article>
 
       <article class="card proj rv">
@@ -395,7 +465,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 </section>
 
 <!-- APPROACH -->
-<section id="approach">
+<section id="approach" class="alt">
   <div class="wrap">
     <div class="head rv">
       <span class="kicker">How I work</span>
@@ -412,7 +482,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 </section>
 
 <!-- EXPERIENCE -->
-<section id="experience" class="alt">
+<section id="experience">
   <div class="wrap">
     <div class="head rv">
       <span class="kicker">Experience</span>
