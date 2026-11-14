@@ -13,6 +13,14 @@
 ## NetSuite expertise
 SuitePayments and payment gateway integrations, SuiteBilling, Advanced Revenue Management (ARM), Electronic Invoicing, SuiteScript 2.x, SuiteQL, SuiteCloud Development Framework (SDF), SuiteBuilder, SuiteApps, REST integrations, AI agents on NetSuite data.
 
+## AI product work
+- PIMS AI Tools and AROne AI Tools: AI built into two Elim NetSuite products (physical inventory counting and AR collections). 11 read-only MCP Custom Tools, AI briefs, AI email drafting, and built-in safeguards. Both earned Oracle NetSuite's AI Application Badge (November 2026).
+- SuitePaymentAI: a nine-tool AI layer for payment operations, with an Admin Guide assistant running inside NetSuite on N/llm.
+- Multi-agent delivery pipeline: five stages from business requirements to SDF build.
+- CFO AI agent: answers finance questions over live ERP data through a 12-tool SuiteQL API; cut analysis turnaround from hours to minutes.
+- AI-assisted SuiteScript migration: an AI audit that inventories a client's scripts and produces scoping documents for upgrades to SuiteScript 2.1.
+- Leads Elim's company AI Committee.
+
 ## Open to
 Product leadership roles and select advisory work in embedded fintech, payments and NetSuite.
 
