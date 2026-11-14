@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rishi Shah — Product Leader, Embedded Payments & NetSuite</title>
+<meta name="description" content="Rishi Shah is a product leader who builds and ships embedded payments and fintech products on NetSuite — from zero-to-one discovery to P&L ownership.">
+<meta property="og:title" content="Rishi Shah — Product Leader, Embedded Payments & NetSuite">
+<meta property="og:description" content="Zero-to-one fintech product delivery, P&L ownership, and deep NetSuite engineering expertise.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#070b14">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1220'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='28' text-anchor='middle' fill='%235eead4'%3ERS%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#070b14; --bg2:#0b1220; --card:#0f1829; --card2:#131e33;
+  --line:rgba(148,163,184,.14); --line2:rgba(148,163,184,.26);
+  --text:#e6ecf5; --muted:#9aa8bd; --dim:#6b7a92;
+  --a1:#5eead4; --a2:#60a5fa; --a3:#a78bfa;
+  --grad:linear-gradient(100deg,var(--a1),var(--a2) 55%,var(--a3));
+  --radius:18px; --max:1160px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--text);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{font-family:Sora,Inter,sans-serif;line-height:1.15;letter-spacing:-.02em;text-wrap:balance}
+p{text-wrap:pretty}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+.grad{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+:focus-visible{outline:2px solid var(--a1);outline-offset:3px;border-radius:6px}
+
+/* NAV */
+header{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,border-color .3s;border-bottom:1px solid transparent}
+header.scrolled{background:rgba(7,11,20,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-color:var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:12px;font-family:Sora;font-weight:600}
+.mono{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;font-size:13px;font-weight:700;color:#06121a;background:var(--grad)}
+.links{display:flex;align-items:center;gap:30px;font-size:14.5px;color:var(--muted)}
+.links a:hover{color:var(--text)}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:999px;font-weight:600;font-size:15px;transition:transform .2s,box-shadow .2s,background .2s,border-color .2s;cursor:pointer;border:1px solid transparent}
+.btn.primary{background:var(--grad);color:#06121a;box-shadow:0 8px 30px -10px rgba(94,234,212,.55)}
+.btn.primary:hover{transform:translateY(-2px);box-shadow:0 14px 36px -10px rgba(96,165,250,.7)}
+.btn.ghost{border-color:var(--line2);color:var(--text)}
+.btn.ghost:hover{background:rgba(148,163,184,.08);border-color:rgba(148,163,184,.45)}
+.btn.sm{padding:9px 18px;font-size:14px}
+.burger{display:none;background:none;border:1px solid var(--line2);border-radius:10px;width:42px;height:42px;color:var(--text);cursor:pointer}
+
+/* HERO */
+.hero{position:relative;padding:170px 0 90px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(620px 420px at 12% 8%,rgba(94,234,212,.16),transparent 65%),
+  radial-gradient(700px 480px at 88% 0%,rgba(96,165,250,.18),transparent 65%),
+  radial-gradient(520px 420px at 70% 90%,rgba(167,139,250,.13),transparent 65%);pointer-events:none}
+.hero::after{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse 75% 65% at 50% 30%,#000 25%,transparent 78%);-webkit-mask-image:radial-gradient(ellipse 75% 65% at 50% 30%,#000 25%,transparent 78%);opacity:.5;pointer-events:none}
+.hero .wrap{position:relative;z-index:1}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;padding:7px 14px;border:1px solid var(--line2);border-radius:999px;font-size:13px;color:var(--muted);background:rgba(15,24,41,.6)}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--a1);box-shadow:0 0 0 0 rgba(94,234,212,.6);animation:pulse 2.2s infinite}
+@keyframes pulse{70%{box-shadow:0 0 0 9px rgba(94,234,212,0)}100%{box-shadow:0 0 0 0 rgba(94,234,212,0)}}
+.hero h1{font-size:clamp(38px,6.2vw,74px);font-weight:700;margin:26px 0 22px;max-width:15ch}
+.hero p.lead{font-size:clamp(17px,1.6vw,20px);color:var(--muted);max-width:60ch}
+.cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:76px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.stat{background:rgba(11,18,32,.85);padding:28px 26px}
+.stat b{display:block;font-family:Sora;font-size:clamp(30px,3.4vw,44px);font-weight:700;letter-spacing:-.03em}
+.stat>span{font-size:14px;color:var(--muted)}
+
+/* SECTIONS */
+section{padding:104px 0;position:relative}
+.kicker{font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--a1)}
+.head{max-width:720px;margin-bottom:52px}
+.head h2{font-size:clamp(30px,3.8vw,46px);font-weight:700;margin:14px 0 16px}
+.head p{color:var(--muted);font-size:17.5px}
+.alt{background:linear-gradient(180deg,var(--bg2),var(--bg))}
+
+/* EXPERTISE */
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{position:relative;background:linear-gradient(180deg,var(--card),rgba(15,24,41,.6));border:1px solid var(--line);border-radius:var(--radius);padding:28px;transition:transform .3s,border-color .3s,box-shadow .3s}
+.card:hover{transform:translateY(-5px);border-color:rgba(94,234,212,.4);box-shadow:0 24px 50px -28px rgba(94,234,212,.45)}
+.icon{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;background:rgba(94,234,212,.1);border:1px solid rgba(94,234,212,.25);color:var(--a1);margin-bottom:20px}
+.icon svg{width:22px;height:22px}
+.card h3{font-size:19px;font-weight:600;margin-bottom:10px}
+.card p{color:var(--muted);font-size:15px}
+.card ul{list-style:none;margin-top:16px;display:grid;gap:8px}
+.card li{font-size:14px;color:var(--muted);padding-left:20px;position:relative}
+.card li::before{content:"";position:absolute;left:0;top:9px;width:8px;height:2px;background:var(--a1);border-radius:2px}
+
+/* PROJECTS */
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.proj{display:flex;flex-direction:column;padding:32px;overflow:hidden}
+.proj.wide{grid-column:1/-1;display:grid;grid-template-columns:1.25fr .75fr;gap:40px;align-items:center;background:linear-gradient(120deg,rgba(94,234,212,.08),var(--card) 40%,rgba(167,139,250,.08))}
+.tagrow{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.tag{font-size:12px;font-weight:500;padding:5px 11px;border-radius:999px;border:1px solid var(--line2);color:var(--muted)}
+.tag.hot{color:var(--a1);border-color:rgba(94,234,212,.35);background:rgba(94,234,212,.07)}
+.proj h3{font-size:23px;margin-bottom:12px}
+.proj .row{margin-top:14px}
+.proj .row b{display:block;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);font-weight:600;margin-bottom:4px}
+.proj .row p{font-size:15px}
+.result{margin-top:24px;padding-top:20px;border-top:1px solid var(--line);display:flex;gap:28px;flex-wrap:wrap}
+.result div b{display:block;font-family:Sora;font-size:26px;font-weight:700}
+.result div span{font-size:13px;color:var(--muted)}
+.proj.wide .result{margin:0;padding:0;border:0;display:grid;gap:14px}
+.proj.wide .result div{background:rgba(7,11,20,.55);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.proj.wide .result div b{font-size:32px}
+
+/* APPROACH */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:s}
+.step{padding:26px;border:1px solid var(--line);border-radius:var(--radius);background:rgba(15,24,41,.5);counter-increment:s}
+.step::before{content:"0" counter(s);font-family:Sora;font-weight:700;font-size:15px;color:var(--a1);display:block;margin-bottom:14px}
+.step h3{font-size:18px;margin-bottom:8px}
+.step p{font-size:14.5px;color:var(--muted)}
+
+/* TIMELINE */
+.two{display:grid;grid-template-columns:1.5fr 1fr;gap:56px;align-items:start}
+.tl{position:relative;padding-left:30px}
+.tl::before{content:"";position:absolute;left:5px;top:8px;bottom:8px;width:1px;background:linear-gradient(var(--a1),var(--a3),transparent)}
+.job{position:relative;padding-bottom:40px}
+.job:last-child{padding-bottom:0}
+.job::before{content:"";position:absolute;left:-30px;top:8px;width:11px;height:11px;border-radius:50%;background:var(--bg);border:2px solid var(--a1)}
+.job time{font-size:13px;color:var(--a1);font-weight:500}
+.job h3{font-size:20px;margin:6px 0 2px}
+.job .org{color:var(--muted);font-size:15px;margin-bottom:12px}
+.job ul{list-style:none;display:grid;gap:8px}
+.job li{font-size:15px;color:var(--muted);padding-left:18px;position:relative}
+.job li::before{content:"";position:absolute;left:0;top:11px;width:6px;height:6px;border-radius:50%;background:var(--line2)}
+.side{display:grid;gap:18px}
+.side .card h3{font-size:16px;margin-bottom:14px}
+.edu{font-size:15px;margin-bottom:12px}
+.edu:last-child{margin:0}
+.edu span{display:block;color:var(--muted);font-size:13.5px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+
+/* CONTACT */
+.contact{padding:0 0 110px}
+.cbox{position:relative;border-radius:26px;padding:72px 40px;text-align:center;border:1px solid var(--line2);overflow:hidden;background:var(--card)}
+.cbox::before{content:"";position:absolute;inset:0;background:radial-gradient(500px 300px at 20% 0%,rgba(94,234,212,.2),transparent 70%),radial-gradient(500px 300px at 85% 100%,rgba(167,139,250,.22),transparent 70%)}
+.cbox>*{position:relative}
+.cbox h2{font-size:clamp(30px,4.2vw,50px);margin:14px auto 16px;max-width:18ch}
+.cbox p{color:var(--muted);max-width:56ch;margin:0 auto;font-size:17.5px}
+.cbox .cta{justify-content:center}
+footer{border-top:1px solid var(--line);padding:28px 0;color:var(--dim);font-size:13.5px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+/* REVEAL */
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+
+@media (max-width:1000px){
+  .grid4,.steps{grid-template-columns:repeat(2,1fr)}
+  .two{grid-template-columns:1fr;gap:44px}
+  .proj.wide{grid-template-columns:1fr;gap:26px}
+}
+@media (max-width:760px){
+  section{padding:76px 0}
+  .hero{padding:130px 0 64px}
+  .links{position:fixed;inset:68px 0 auto 0;flex-direction:column;align-items:stretch;gap:0;background:rgba(7,11,20,.97);border-bottom:1px solid var(--line);padding:8px 24px 20px;display:none}
+  .links.open{display:flex}
+  .links a{padding:14px 0;border-bottom:1px solid var(--line);font-size:16px}
+  .links a.btn{margin-top:16px;justify-content:center;border-bottom:0}
+  .burger{display:grid;place-items:center}
+  .stats{grid-template-columns:repeat(2,1fr);margin-top:52px}
+  .grid4,.steps,.projects{grid-template-columns:1fr}
+  .proj{padding:26px}
+  .cbox{padding:52px 22px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rv{opacity:1;transform:none;transition:none}
+  .dot{animation:none}
+}
+</style>
+</head>
+<body>
+
+<header id="top">
+  <div class="wrap nav">
+    <a href="#home" class="brand"><span class="mono">RS</span>Rishi Shah</a>
+    <button class="burger" aria-label="Open menu" aria-expanded="false">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <nav class="links" aria-label="Primary">
+      <a href="#expertise">Expertise</a>
+      <a href="#projects">Projects</a>
+      <a href="#approach">Approach</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact" class="btn primary sm">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+<!-- HERO -->
+<div class="hero">
+  <div class="wrap">
+    <span class="eyebrow rv"><span class="dot"></span>Head of Product · Embedded Payments · Toronto, Canada</span>
+    <h1 class="rv">I build fintech products that <span class="grad">businesses actually pay through.</span></h1>
+    <p class="lead rv">I'm Rishi Shah — a product leader who takes embedded payments from first customer signal to general availability, and owns the P&amp;L after launch. Engineer by training, NetSuite-native by experience, product head by trade.</p>
+    <div class="cta rv">
+      <a href="#projects" class="btn primary">See my work
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="#contact" class="btn ghost">Let's collaborate</a>
+    </div>
+
+    <div class="stats rv">
+      <div class="stat"><b class="grad"><span data-count="37">37</span>%</b><span>Year-over-year revenue growth on the payments product line I own</span></div>
+      <div class="stat"><b class="grad"><span data-count="6">6</span> / <span data-count="6">6</span></b><span>Product bets launched through pilot-then-scale with zero failed launches</span></div>
+      <div class="stat"><b class="grad"><span data-count="50">50</span>%+</b><span>Faster release cycles — from 6+ weeks down to under 3</span></div>
+      <div class="stat"><b class="grad"><span data-count="15">15</span></b><span>People led across Product, Engineering and Services</span></div>
+    </div>
+  </div>
+</div>
+
+<!-- EXPERTISE -->
+<section id="expertise" class="alt">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="kicker">Expertise</span>
+      <h2>Four disciplines, one operator.</h2>
+      <p>Most product leaders can speak to strategy. Fewer can read the API docs, model the unit economics, and configure the ERP themselves. I work across all four.</p>
+    </div>
+    <div class="grid4">
+      <article class="card rv">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></div>
+        <h3>Product Management</h3>
+        <p>Full P&amp;L and strategy ownership for a B2B SaaS product line.</p>
+        <ul><li>Zero-to-one discovery to GA</li><li>Lean pilots &amp; go/no-go calls</li><li>Roadmapping &amp; unit economics</li><li>Build vs. buy vs. partner</li></ul>
+      </article>
+      <article class="card rv">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2.5"/><path d="M2.5 10h19M6.5 15h4"/></svg></div>
+        <h3>Fintech &amp; Payments</h3>
+        <p>Embedded payments for SMB and mid-market businesses.</p>
+        <ul><li>Multi-gateway integrations</li><li>Tokenization &amp; pay-by-link</li><li>Processor &amp; BaaS evaluation</li><li>Security &amp; compliance at the ISV layer</li></ul>
+      </article>
+      <article class="card rv">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8.5 4.8v8.4L12 21l-8.5-4.8V7.8z"/><path d="M3.5 7.8L12 12.5l8.5-4.7M12 12.5V21"/></svg></div>
+        <h3>NetSuite</h3>
+        <p>Six years inside the platform — support, development, product.</p>
+        <ul><li>SuiteApps &amp; SuitePayments</li><li>SuiteBilling, ARM, E-Invoicing</li><li>SuiteScript 2.x, SuiteQL, SDF</li><li>SuiteCloud Developer II certified</li></ul>
+      </article>
+      <article class="card rv">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M13.5 5l-3 14"/></svg></div>
+        <h3>Engineering &amp; AI</h3>
+        <p>Hands-on enough to architect it, not just specify it.</p>
+        <ul><li>REST payment APIs</li><li>Multi-agent LLM pipelines</li><li>Python &amp; SQL</li><li>API security review</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="kicker">Selected projects</span>
+      <h2>Work that moved a number.</h2>
+      <p>Six projects across product, payments, AI and NetSuite. Client and partner names are withheld; the outcomes are real.</p>
+    </div>
+    <div class="projects">
+
+      <article class="card proj wide rv">
+        <div>
+          <div class="tagrow"><span class="tag hot">Flagship</span><span class="tag">Embedded Payments</span><span class="tag">Zero-to-One</span><span class="tag">P&amp;L</span></div>
+          <h3>Embedded payments suite for NetSuite businesses</h3>
+          <div class="row"><b>Challenge</b><p>SMB and mid-market companies running on NetSuite — home services, retail, distribution — had no clean way to collect payments inside the system their finance teams already live in.</p></div>
+          <div class="row"><b>What I did</b><p>Owned strategy and P&amp;L for the product line. Ran build-vs-partner evaluations and contract negotiations with four global payment processors, weighing capability, integration economics, risk exposure and customer fit — then shipped native gateway integrations and a new zero-to-one payment workflow feature from discovery through GA.</p></div>
+        </div>
+        <div class="result">
+          <div><b class="grad">37%</b><span>YoY revenue growth</span></div>
+          <div><b class="grad">4</b><span>Global payment gateways integrated</span></div>
+          <div><b class="grad">10+</b><span>Client accounts live within 2 release cycles</span></div>
+        </div>
+      </article>
+
+      <article class="card proj rv">
+        <div class="tagrow"><span class="tag">Product Operations</span><span class="tag">Lean Validation</span></div>
+        <h3>Pilot-then-scale delivery model</h3>
+        <div class="row"><b>Challenge</b><p>Financial product bets are expensive to get wrong, and early signals are thin.</p></div>
+        <div class="row"><b>What I did</b><p>Designed a delivery model: tightly scoped MVPs, limited pilots with 3–5 accounts, adoption and payment-success-rate signals, then an evidence-based go/no-go on full rollout.</p></div>
+        <div class="result"><div><b class="grad">6 bets</b><span>shipped</span></div><div><b class="grad">0</b><span>failed launches</span></div></div>
+      </article>
+
+      <article class="card proj rv">
+        <div class="tagrow"><span class="tag">AI</span><span class="tag">Finance</span><span class="tag">NetSuite</span></div>
+        <h3>CFO AI agent &amp; multi-agent configuration pipeline</h3>
+        <div class="row"><b>Challenge</b><p>Financial analysis and NetSuite configuration work consumed hours of specialist time per request.</p></div>
+        <div class="row"><b>What I did</b><p>Architected a CFO AI agent that queries live ERP data through SuiteQL tool handlers, plus a multi-agent pipeline that generates NetSuite configuration automatically.</p></div>
+        <div class="result"><div><b class="grad">Hours → minutes</b><span>financial analysis turnaround</span></div></div>
+      </article>
+
+      <article class="card proj rv">
+        <div class="tagrow"><span class="tag">Security</span><span class="tag">Compliance</span><span class="tag">APIs</span></div>
+        <h3>Payment portal API security remediation</h3>
+        <div class="row"><b>Challenge</b><p>A broken-object-level-authorization (BOLA) class vulnerability surfaced in a payment portal integration.</p></div>
+        <div class="row"><b>What I did</b><p>Identified the issue, led remediation, coordinated responsible disclosure and wrote the compliance remediation playbook the team now follows.</p></div>
+        <div class="result"><div><b class="grad">2</b><span>API endpoints secured</span></div><div><b class="grad">1</b><span>reusable compliance playbook</span></div></div>
+      </article>
+
+      <article class="card proj rv">
+        <div class="tagrow"><span class="tag">Delivery</span><span class="tag">Team Leadership</span></div>
+        <h3>Release cadence transformation</h3>
+        <div class="row"><b>Challenge</b><p>Six-week-plus release cycles were slowing iteration on early-stage financial products.</p></div>
+        <div class="row"><b>What I did</b><p>Introduced time-boxed delivery across a cross-functional product and engineering team, tightening scope and feedback loops.</p></div>
+        <div class="result"><div><b class="grad">50%+</b><span>shorter release cycle</span></div><div><b class="grad">&lt; 3 wks</b><span>from 6+ weeks</span></div></div>
+      </article>
+
+      <article class="card proj rv">
+        <div class="tagrow"><span class="tag">NetSuite</span><span class="tag">Billing</span><span class="tag">Revenue Recognition</span></div>
+        <h3>Billing automation &amp; revenue recognition</h3>
+        <div class="row"><b>Challenge</b><p>Finance teams were running subscription billing and revenue recognition with heavy manual effort.</p></div>
+        <div class="row"><b>What I did</b><p>Built solutions on SuiteBilling, Advanced Revenue Management and E-Invoicing across three mid-market finance workflows, and led a major system integration with zero critical defects after go-live.</p></div>
+        <div class="result"><div><b class="grad">~30%</b><span>less manual finance effort</span></div><div><b class="grad">3</b><span>workflows automated</span></div></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- APPROACH -->
+<section id="approach" class="alt">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="kicker">How I work</span>
+      <h2>Evidence before investment.</h2>
+      <p>The same four steps sit behind every product I ship. They are why six bets have gone out and none have come back.</p>
+    </div>
+    <div class="steps">
+      <div class="step rv"><h3>Discover</h3><p>Start with an unmet workflow, not a feature request. Sit with the finance team that feels the pain.</p></div>
+      <div class="step rv"><h3>Decide</h3><p>Build, buy or partner — settled on capability, economics, risk and customer fit, in writing.</p></div>
+      <div class="step rv"><h3>Pilot</h3><p>Ship the smallest real version to 3–5 accounts and measure adoption and payment success.</p></div>
+      <div class="step rv"><h3>Scale</h3><p>Make the go/no-go call on evidence, then roll out and own the revenue line.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="wrap">
+    <div class="head rv">
+      <span class="kicker">Experience</span>
+      <h2>From the support desk to the P&amp;L.</h2>
+      <p>I learned NetSuite by fixing it, then by building on it, and now by running a product line on top of it.</p>
+    </div>
+    <div class="two">
+      <div class="tl">
+        <div class="job rv">
+          <time>Nov 2023 — Present</time>
+          <h3>Head of Product, Embedded Payments</h3>
+          <div class="org">Elim Solutions · Greater Toronto Area</div>
+          <ul>
+            <li>Own P&amp;L and product strategy for the SuitePayment product line, an embedded fintech layer for NetSuite businesses.</li>
+            <li>Lead a 15-person team across Product, Engineering and a newly launched Services vertical.</li>
+            <li>Engaged Oracle NetSuite's payments business unit on co-sell and embedded product partnership scoping.</li>
+          </ul>
+        </div>
+        <div class="job rv">
+          <time>Jun 2022 — Nov 2023</time>
+          <h3>NetSuite Developer</h3>
+          <div class="org">Qlik · Vaughan, ON</div>
+          <ul>
+            <li>Delivered billing automation and revenue recognition solutions; recognized 11+ times in 12 months for high-impact contributions.</li>
+            <li>Led an enterprise system integration and a legacy CRM decommissioning — on time, on budget, zero critical defects after go-live.</li>
+          </ul>
+        </div>
+        <div class="job rv">
+          <time>Jan 2021 — Apr 2022</time>
+          <h3>Technical Analyst, SuiteCloud / SuiteBuilder</h3>
+          <div class="org">Oracle NetSuite · Mississauga, ON</div>
+          <ul>
+            <li>Ranked Top Performer in Toronto Technical Support on case productivity and customer satisfaction.</li>
+            <li>Resolved 100+ complex platform issues and coached 8+ colleagues as a technical resource.</li>
+            <li>Nominated globally for Oracle's "Above and Beyond" award for preventing a Tier-1 client go-live failure.</li>
+          </ul>
+        </div>
+      </div>
+      <aside class="side">
+        <div class="card rv">
+          <h3>Education</h3>
+          <div class="edu">M.Eng., Electrical &amp; Computer Engineering<span>University of Waterloo · 2020 · GPA 3.95</span></div>
+          <div class="edu">B.Eng., Electrical Engineering<span>M.S. University of Baroda · 2017 · GPA 3.93</span></div>
+        </div>
+        <div class="card rv">
+          <h3>Certifications</h3>
+          <div class="chips"><span class="tag hot">NetSuite SuiteCloud Developer II</span><span class="tag hot">NetSuite SuiteFoundation</span></div>
+        </div>
+        <div class="card rv">
+          <h3>Toolkit</h3>
+          <div class="chips">
+            <span class="tag">SuiteScript 2.x</span><span class="tag">SuiteQL</span><span class="tag">SDF</span><span class="tag">REST APIs</span><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">LLM pipelines</span><span class="tag">Tokenization</span><span class="tag">Pay by Link</span><span class="tag">Postman</span><span class="tag">Git</span><span class="tag">Jira</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="cbox rv">
+      <span class="kicker">Let's talk</span>
+      <h2>Have a payments or NetSuite product to build?</h2>
+      <p>I'm open to product leadership roles and select advisory work in embedded fintech, payments and NetSuite. Tell me what you're building.</p>
+      <div class="cta" id="contact-links"></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap"><span>© <span id="yr">2026</span> Rishi Shah</span><span>Product · Fintech · NetSuite</span></div>
+</footer>
+
+<script>
+/* ---- Contact details: edit here. Empty values hide the button. ---- */
+const CONTACT = {
+  email: "rrs8929@gmail.com",
+  linkedin: "",
+  github: ""
+};
+
+document.documentElement.classList.add('js');
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+// contact buttons
+(function(){
+  const box = document.getElementById('contact-links');
+  const items = [
+    CONTACT.email && ['Email me', 'mailto:' + CONTACT.email, 'primary'],
+    CONTACT.linkedin && ['LinkedIn', CONTACT.linkedin, CONTACT.email ? 'ghost' : 'primary'],
+    CONTACT.github && ['GitHub', CONTACT.github, 'ghost']
+  ].filter(Boolean);
+  for (const [label, href, kind] of items) {
+    const a = document.createElement('a');
+    a.className = 'btn ' + kind; a.textContent = label; a.href = href;
+    if (!href.startsWith('mailto:')) { a.target = '_blank'; a.rel = 'noopener'; }
+    box.appendChild(a);
+  }
+})();
+
+// nav
+const header = document.getElementById('top');
+const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 12);
+onScroll(); addEventListener('scroll', onScroll, {passive:true});
+const burger = document.querySelector('.burger'), links = document.querySelector('.links');
+burger.addEventListener('click', () => {
+  const open = links.classList.toggle('open');
+  burger.setAttribute('aria-expanded', open);
+});
+links.addEventListener('click', e => { if (e.target.closest('a')) { links.classList.remove('open'); burger.setAttribute('aria-expanded', false); } });
+
+// reveal + counters
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+function count(el){
+  const end = +el.dataset.count, t0 = performance.now(), dur = 1100;
+  (function tick(t){
+    const p = Math.min(1, (t - t0) / dur);
+    el.textContent = Math.round(end * (1 - Math.pow(1 - p, 3)));
+    if (p < 1) requestAnimationFrame(tick);
+  })(t0);
+}
+if ('IntersectionObserver' in window && !reduce) {
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      const sibs = [...e.target.parentElement.children].filter(c => c.classList.contains('rv'));
+      e.target.style.transitionDelay = Math.min(sibs.indexOf(e.target), 5) * 70 + 'ms';
+      e.target.classList.add('in');
+      e.target.querySelectorAll('[data-count]').forEach(count);
+      io.unobserve(e.target);
+    });
+  }, {threshold: .12});
+  document.querySelectorAll('.rv').forEach(el => io.observe(el));
+} else {
+  document.querySelectorAll('.rv').forEach(el => el.classList.add('in'));
+}
+</script>
+</body>
+</html>
